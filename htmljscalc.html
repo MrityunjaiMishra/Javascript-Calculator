@@ -1,0 +1,123 @@
+<html>
+<head>
+<style type="text/css">
+.row{
+	margin-bottom : 10px !important;
+	height : 50px !important;
+} 
+body{
+	margin-top : 10px !important;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+
+<h1 style="font-family: monospace;" class="text-center">Basic Javascript Calculator</h1><br><br>
+<form name="form" id ="frm" class="container">
+
+<input type="text" id="txxt" class="text-right form-control input-lg" name="txt"><br>
+<div class="row">
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn21"type="button" name="btn" value="1" onclick="disp(btn.value)">
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn22" type="button" name="btn2" value="2" onclick="disp(btn2.value)">
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn23" type="button" name="btn3" value="3" onclick="disp(btn3.value)">
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn24" type="button" name="btn4" value="4" onclick="disp(btn4.value)">
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn25" type="button" name="btn5" value="5" onclick="disp(btn5.value)">
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn26" type="button" name="btn6" value="6" onclick="disp(btn6.value)">
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn27" type="button" name="btn7" value="7" onclick="disp(btn7.value)">
+
+</div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn28" type="button" name="btn8" value="8" onclick="disp(btn8.value)">
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn29" type="button" name="btn9" value="9" onclick="disp(btn9.value)"></div>
+
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn30" type="button" name="btn0" value="0" onclick="disp(btn0.value)"></div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn31" type="button" name="btn11" value="+" onclick="disp(btn11.value)"></div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn32" type="button" name="btn12" value="-" onclick="disp(btn12.value)"></div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn33" type="button" name="btn13" value="/" onclick="disp(btn13.value)"></div>
+
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn34" type="button" name="btn14" value="*" onclick="disp(btn14.value)"></div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn35" type="button" name="btn15" value="=" onclick="txt.value=eval(txt.value)"></div>
+
+<div class="col-md-3">
+<input class="btn btn-info btn-block" id="btn36" type="button" name="btn16" value="C" onclick="erase()"></div>
+
+</div>
+
+
+
+
+
+
+
+
+</form>
+<script type="text/javascript">
+
+
+
+function disp(x){
+form.txt.value=form.txt.value+x;
+}
+
+function erase(){
+document.getElementById("txxt").value='';
+}
+
+</script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
